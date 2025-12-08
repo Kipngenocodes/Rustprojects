@@ -1,12 +1,35 @@
-   0.108477800s  INFO prepare_target{force=false package_id=learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust) target="learn-rust"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\p1\\Desktop\\Rust Projects\\learn-rust\\src\\main.rs"
-   0.108514600s  INFO prepare_target{force=false package_id=learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust) target="learn-rust"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\p1\\Desktop\\Rust Projects\\learn-rust\\target\\debug\\.fingerprint\\learn-rust-b50c37c16350d4a6\\dep-bin-learn-rust"
-   0.108520600s  INFO prepare_target{force=false package_id=learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust) target="learn-rust"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13409678827, nanos: 707906900 } < FileTime { seconds: 13409678842, nanos: 727819500 }
-   0.108825800s  INFO prepare_target{force=false package_id=learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust) target="learn-rust"}: cargo::core::compiler::fingerprint: fingerprint dirty for learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust)/Check { test: false }/TargetInner { name: "learn-rust", doc: true, ..: with_path("C:\\Users\\p1\\Desktop\\Rust Projects\\learn-rust\\src\\main.rs", Edition2024) }
-   0.108857000s  INFO prepare_target{force=false package_id=learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust) target="learn-rust"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\p1\\Desktop\\Rust Projects\\learn-rust\\target\\debug\\.fingerprint\\learn-rust-b50c37c16350d4a6\\dep-bin-learn-rust", reference_mtime: FileTime { seconds: 13409678827, nanos: 707906900 }, stale: "C:\\Users\\p1\\Desktop\\Rust Projects\\learn-rust\\src\\main.rs", stale_mtime: FileTime { seconds: 13409678842, nanos: 727819500 } }))
-   0.109883600s  INFO prepare_target{force=false package_id=learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust) target="learn-rust"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\p1\\Desktop\\Rust Projects\\learn-rust\\src\\main.rs"
-   0.109909900s  INFO prepare_target{force=false package_id=learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust) target="learn-rust"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\p1\\Desktop\\Rust Projects\\learn-rust\\target\\debug\\.fingerprint\\learn-rust-11e3da36ae0aad7e\\dep-test-bin-learn-rust"
-   0.109917400s  INFO prepare_target{force=false package_id=learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust) target="learn-rust"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13409678827, nanos: 707906900 } < FileTime { seconds: 13409678842, nanos: 727819500 }
-   0.110229000s  INFO prepare_target{force=false package_id=learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust) target="learn-rust"}: cargo::core::compiler::fingerprint: fingerprint dirty for learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust)/Check { test: true }/TargetInner { name: "learn-rust", doc: true, ..: with_path("C:\\Users\\p1\\Desktop\\Rust Projects\\learn-rust\\src\\main.rs", Edition2024) }
-   0.110275400s  INFO prepare_target{force=false package_id=learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust) target="learn-rust"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\p1\\Desktop\\Rust Projects\\learn-rust\\target\\debug\\.fingerprint\\learn-rust-11e3da36ae0aad7e\\dep-test-bin-learn-rust", reference_mtime: FileTime { seconds: 13409678827, nanos: 707906900 }, stale: "C:\\Users\\p1\\Desktop\\Rust Projects\\learn-rust\\src\\main.rs", stale_mtime: FileTime { seconds: 13409678842, nanos: 727819500 } }))
+   0.041649500s  INFO prepare_target{force=false package_id=learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust) target="datatypes"}: cargo::core::compiler::fingerprint: fingerprint error for learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust)/Check { test: false }/TargetInner { name: "datatypes", doc: true, ..: with_path("C:\\Users\\p1\\Desktop\\Rust Projects\\learn-rust\\src\\bin\\datatypes.rs", Edition2024) }
+   0.041727400s  INFO prepare_target{force=false package_id=learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust) target="datatypes"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\p1\Desktop\Rust Projects\learn-rust\target\debug\.fingerprint\learn-rust-66b257d32c56b915\bin-datatypes`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.067006100s  INFO prepare_target{force=false package_id=learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust) target="datatypes"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\p1\\Desktop\\Rust Projects\\learn-rust\\src\\bin\\datatypes.rs"
+   0.067056900s  INFO prepare_target{force=false package_id=learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust) target="datatypes"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\p1\\Desktop\\Rust Projects\\learn-rust\\target\\debug\\.fingerprint\\learn-rust-005c34077c4d2df3\\dep-test-bin-datatypes"
+   0.067065200s  INFO prepare_target{force=false package_id=learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust) target="datatypes"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13409681187, nanos: 246978900 } < FileTime { seconds: 13409681191, nanos: 619603700 }
+   0.067554300s  INFO prepare_target{force=false package_id=learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust) target="datatypes"}: cargo::core::compiler::fingerprint: fingerprint dirty for learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust)/Check { test: true }/TargetInner { name: "datatypes", doc: true, ..: with_path("C:\\Users\\p1\\Desktop\\Rust Projects\\learn-rust\\src\\bin\\datatypes.rs", Edition2024) }
+   0.067600300s  INFO prepare_target{force=false package_id=learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust) target="datatypes"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\p1\\Desktop\\Rust Projects\\learn-rust\\target\\debug\\.fingerprint\\learn-rust-005c34077c4d2df3\\dep-test-bin-datatypes", reference_mtime: FileTime { seconds: 13409681187, nanos: 246978900 }, stale: "C:\\Users\\p1\\Desktop\\Rust Projects\\learn-rust\\src\\bin\\datatypes.rs", stale_mtime: FileTime { seconds: 13409681191, nanos: 619603700 } }))
     Checking learn-rust v0.1.0 (C:\Users\p1\Desktop\Rust Projects\learn-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.24s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.28s
