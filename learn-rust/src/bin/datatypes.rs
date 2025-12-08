@@ -23,6 +23,10 @@ fn main() {
     let emoji: char = '😀';
     println!("Characters: {}, {}", c, emoji);
 
+    // String type
+    let s: &str = "Hello, world!";
+    println!("String: {}", s);
+
     // Compound Types
 
     // Tuple type
