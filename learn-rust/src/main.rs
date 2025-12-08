@@ -5,5 +5,9 @@ fn main() {
     print!("Hello, world!");
     print!("I wish you well my love!");
     // Manually adding new line with \n 
-    print!("\nI wish you well my love!");
+    println!("\nI wish you well my love!"); 
+
+    /*This is a comment
+    which spans multiple lines */
+    println!("The game is rigged if you can concetrate!");
 }
