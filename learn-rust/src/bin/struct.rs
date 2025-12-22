@@ -30,4 +30,7 @@ fn main() {
     };
 
     println!("Name: {}, Age: {}", person2.name, person2.age); // Output: Name: Bob, Age: 25
+
+    // Changing a field in person2 would result in a compile-time error since person2 is not mutable
+    // person2.age += 1; // Uncommenting this line will cause a compile-time error
 }
