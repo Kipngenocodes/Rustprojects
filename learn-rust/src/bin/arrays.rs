@@ -14,4 +14,12 @@ fn main() {
     // Array length
     let length = fruits.len();  
     println!("Number of fruits: {}", length); // Output: 3
+
+    // Loop through an array
+    for fruit in &fruits {
+        println!("Fruit: {}", fruit);
+
+    }
+    // Priniting the entire array
+    println!("All fruits: {:?}", fruits); // Output: ["Apple", "Banana", "Orange"]
 }
